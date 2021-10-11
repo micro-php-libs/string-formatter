@@ -3,7 +3,11 @@
 This is package for helping dev process.
 Clone from Laravel Validation
 
-## How to use 
+## Require
+
+- laravel/framework: ^8.41
+
+## Install 
 
 Config repository composer.json 
 
@@ -21,6 +25,24 @@ Then add the package to dependency
 ```
 
 ## Snippets
+
+**Custom a complex rule**
+
+```
+use MicroPhpLibs\RavelFormatter\Rules\FormatterRule;
+
+class Max100FormatRule extends FormatterRule
+{
+    public function format($attribute, $value)
+    {
+        if (strlen($value) > 100) {
+            return substr($value, 0, 100);
+        }
+
+        return $value;
+    }
+}
+```
 
 **Run following scripts** 
 
@@ -67,7 +89,7 @@ array(4) { ["title"]=> string(56) "Developing Laravel Packages with [Composer De
 
 - For my usage, if it can help you in someway then great.
 - No promise solve your issue
-- It opens then feel free to fork and fix add your changes if needed
+- It opens then feel free to fork and fix or add your changes if needed
 - No testing, not sure if it still has bugs
 
 ## License

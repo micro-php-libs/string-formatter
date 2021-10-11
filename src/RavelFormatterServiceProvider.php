@@ -13,7 +13,7 @@ class RavelFormatterServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // php artisan vendor:publish --tag=dbc-config
+        // php artisan vendor:publish --tag=ravel-formatter
         $this->publishes([
             __DIR__.'/ravel-formatter.php' => config_path('ravel-formatter.php')
         ], 'ravel-formatter');
