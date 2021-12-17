@@ -7,9 +7,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace MicroPhpLibs\RavelFormatter\Contracts;
+namespace MicroPhpLibs\StringFormatter\Contracts;
 
-use MicroPhpLibs\RavelFormatter\Formatter;
+use MicroPhpLibs\StringFormatter\Formatter;
 
 interface FormatterFactoryContract
 {

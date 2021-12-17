@@ -7,12 +7,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace MicroPhpLibs\RavelFormatter;
+namespace MicroPhpLibs\StringFormatter;
 
 
-use MicroPhpLibs\RavelFormatter\Concerns\FormatAttributes;
-use MicroPhpLibs\RavelFormatter\Contracts\FormatterContract;
-use MicroPhpLibs\RavelFormatter\Rules\FormatterRuleContract;
+use MicroPhpLibs\StringFormatter\Concerns\FormatAttributes;
+use MicroPhpLibs\StringFormatter\Contracts\FormatterContract;
+use MicroPhpLibs\StringFormatter\Rules\FormatterRuleContract;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 
@@ -311,7 +311,7 @@ class Formatter implements FormatterContract
      *
      * @return array
      *
-     * @throws \MicroPhpLibs\RavelFormatter\FormatterException
+     * @throws \MicroPhpLibs\StringFormatter\FormatterException
      */
     public function formatted()
     {

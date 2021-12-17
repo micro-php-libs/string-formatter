@@ -1,10 +1,10 @@
 <?php
 
-namespace MicroPhpLibs\RavelFormatter;
+namespace MicroPhpLibs\StringFormatter;
 
 use Illuminate\Support\ServiceProvider;
 
-class RavelFormatterServiceProvider extends ServiceProvider
+class StringFormatterServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -13,10 +13,10 @@ class RavelFormatterServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // php artisan vendor:publish --tag=ravel-formatter
+        // php artisan vendor:publish --tag=string-formatter
         $this->publishes([
-            __DIR__.'/ravel-formatter.php' => config_path('ravel-formatter.php')
-        ], 'ravel-formatter');
+            __DIR__.'/string-formatter.php' => config_path('string-formatter.php')
+        ], 'string-formatter');
     }
 
     /**
@@ -27,7 +27,7 @@ class RavelFormatterServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/ravel-formatter.php', 'ravel-formatter.php'
+            __DIR__.'/string-formatter.php', 'string-formatter.php'
         );
     }
 }

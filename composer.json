@@ -1,6 +1,6 @@
 {
-    "name": "micro-php-libs/ravel-formatter",
-    "description": "Laravel Formatter: One helper clone from validation",
+    "name": "micro-php-libs/string-formatter",
+    "description": "Laravel String Formatter: One helper for formatting string clone from validation",
     "license": "MIT",
     "authors": [
         {
@@ -18,18 +18,18 @@
     },
     "autoload": {
         "psr-4": {
-            "MicroPhpLibs\\RavelFormatter\\": "src/"
+            "MicroPhpLibs\\StringFormatter\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MicroPhpLibs\\RavelFormatter\\Tests\\": "tests"
+            "MicroPhpLibs\\StringFormatter\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "MicroPhpLibs\\RavelFormatter\\RavelFormatterServiceProvider"
+                "StringFormatterServiceProvider"
             ]
         }
     }

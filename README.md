@@ -1,4 +1,4 @@
-# Laravel Formatter Helper
+# Laravel String Formatter Helper
 
 This is package for helping dev process.
 Clone from Laravel Validation
@@ -14,14 +14,14 @@ Config repository composer.json
 ```
 {
     "type": "vcs",
-    "url": "https://github.com/micro-php-libs/ravel-formatter.git"
+    "url": "https://github.com/micro-php-libs/string-formatter.git"
 }
 ```
 
 Then add the package to dependency
 
 ```
-"micro-php-libs/ravel-formatter": "dev-master",
+"micro-php-libs/string-formatter": "dev-master",
 ```
 
 ## Snippets
@@ -29,7 +29,7 @@ Then add the package to dependency
 **Custom a complex rule**
 
 ```
-use MicroPhpLibs\RavelFormatter\Rules\FormatterRule;
+use MicroPhpLibs\StringFormatter\Rules\FormatterRule;
 
 class Max100FormatRule extends FormatterRule
 {
@@ -44,7 +44,7 @@ class Max100FormatRule extends FormatterRule
 }
 ```
 
-**Run following scripts** 
+**Sample using scripts** 
 
 ```
 /** @var array */

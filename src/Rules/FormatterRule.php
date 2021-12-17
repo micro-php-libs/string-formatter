@@ -1,10 +1,10 @@
 <?php
 
 
-namespace MicroPhpLibs\RavelFormatter\Rules;
+namespace MicroPhpLibs\StringFormatter\Rules;
 
 
-use MicroPhpLibs\RavelFormatter\Formatter;
+use MicroPhpLibs\StringFormatter\Formatter;
 
 abstract class FormatterRule implements FormatterRuleContract
 {
